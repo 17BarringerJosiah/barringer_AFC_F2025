@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dented Bean</title>
+    <link rel="icon" href="images/beans.jpg" type="image/jpg" />
+</head>
+<body>
+<header>
+    <h1>The Dented Bean Est. 2024</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Landing</a></li>
+        <li><a href="menu.html">Menu</a></li>
+    </ul>
+</nav>
+
+<form>
+    <h2>Submit an application to work at The Dented Bean!</h2>
+
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName" required minlength="1" maxlength="20">
+    <br>
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" required minlength="1" maxlength="20">
+    <br>
+
+    <label for="address1">Address 1</label>
+    <input type="text" id="address1" name="address1" required>
+    <br>
+
+    <label for="address2">Address 2</label>
+    <input type="text" id="address2" name="address2" required>
+    <br>
+
+    <label for="city">City</label>
+    <input type="text" id="city" name="city" required maxlength="29">
+    <br>
+
+    <label for="state">State</label>
+    <select id="state" name="state" required>
+        <option value="">--Select--</option>
+        <option value="TX">TX</option>
+        <option value="MN">MN</option>
+        <option value="NY">NY</option>
+        <option value="VA">VA</option>
+    </select>
+    <br>
+
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" required min="21" max="99">
+    <br>
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone" required pattern="\d{3}-\d{3}-\d{4}" placeholder="Ex: 123-456-7890">
+    <br>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+
+    <p>Password must be 8–12 characters and must include at least one uppercase, one lowercase, one number, and one special symbol</p>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required minlength="8" maxlength="12"
+           pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,12}">
+    <br>
+
+    <span>Married</span>
+    <input type="radio" id="marriedYes" name="married" required value="yes">
+    <label for="marriedYes">Yes</label>
+    <input type="radio" id="marriedNo" name="married" value="no" checked>
+    <label for="marriedNo">No</label>
+    <br>
+
+    <span>Favorite Colors</span><br>
+    <input type="checkbox" id="colorRed" name="colors" value="red">
+    <label for="colorRed">Red</label><br>
+    <input type="checkbox" id="colorBlue" name="colors" value="blue">
+    <label for="colorBlue">Blue</label><br>
+    <input type="checkbox" id="colorGreen" name="colors" value="green">
+    <label for="colorGreen">Green</label><br>
+    <input type="checkbox" id="colorYellow" name="colors" value="yellow">
+    <label for="colorYellow">Yellow</label><br>
+    <input type="checkbox" id="colorPurple" name="colors" value="purple">
+    <label for="colorPurple">Purple</label><br>
+
+    <label for="moreInfo">More Info</label><br>
+    <textarea id="moreInfo" name="moreInfo" rows="4" maxlength="30"></textarea>
+    <br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+
+
+
+<footer>
+    <p>Contact us at <a href="mailto:josiahbarr23@gmail.com">josiahbarr23@gmai.com</a></p>
+</footer>
+</body>
+</html>
