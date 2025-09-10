@@ -1,0 +1,97 @@
+/*Color theme choice(s) is based on yellow in the main logo of the can */
+header{
+    letter-spacing: 2px;
+    font-family: 'Rancho', serif;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0), 0 0 25px black, 0 0 25px black, 0 0 5px black, 0 0 50px black, 0 0 100px black, 0 0 200px black;
+    border-radius: 30px 0 30px 0;
+}
+
+body {
+    font-family: 'Rancho', serif;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0), 0 0 25px black, 0 0 25px black, 0 0 5px black, 0 0 50px black, 0 0 100px black, 0 0 200px black;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/beans.jpg') no-repeat fixed center;
+    color: #f0f0f0;
+    img{
+        border-radius: 90%;
+    }
+
+    form{
+        margin-bottom: 5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #containerMy-4{
+        background-color: #2b3036;
+        color: rgba(248, 249, 250, 1);
+        padding: 20px;
+        border: 1px solid #1a1a1a;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        text-shadow: 1px 1px 3px rgb(0, 0, 0), 0 0 25px 25px black, 0 0 25px 25px black, 0 0 5px 5px black, 0 0 50px 50px black, 0 0 100px 100px black, 0 0 200px 200px black;
+        font-family: 'Rancho', serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+        background-image: url('images/beanBackground.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+a {
+    color: #dcb939;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 400px;
+    width: 100%;
+    color: #dcb939;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    font-family: 'Rancho', serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background-color: rgb(228, 188, 50);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.navbar .nav-link {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.content{
+    margin-top: 80px;
+}
+

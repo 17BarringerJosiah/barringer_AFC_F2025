@@ -4,51 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Dented Bean</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-5.1.3-dist/css" rel="stylesheet">
     <link rel="icon" href="images/beans.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 <header>
-    <h1>The Dented Bean Est. 2024</h1>
+    <h1 id="title">  The Dented Bean Est. 2024</h1>
 </header>
-<nav>
-    <ul>
-        <li><a href="index.html">Landing</a></li>
-        <li><a href="hiring.html">Now Hiring</a></li>
-    </ul>
+<nav class="navbar navbar-expand-sm bg-body-tertiary" data-bs-theme="dark" id="navbar">
+    <div class="container-fluid justify-content-center" id="navbarContainer">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation" id="navbarButton">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav nav-underline">
+                <a class="navbar-brand mx-auto" href="index.html" id="beancanImageClass">
+                    <img src="images/beancan.PNG" alt="Bootstrap" width="24" height="24" id="beancanImage">
+                </a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="menu.html">Menu</a>
+                <a class="nav-link" href="hiring.html">Now Hiring</a>
+            </div>
+        </div>
+    </div>
 </nav>
 <h2>Our World Famous Menu!</h2>
-<table border="1">
-    <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Price</th>
-    </tr>
-    <tr>
-        <td>Bethel's Bean Bowl</td>
-        <td>Big ol' bowl of beans</td>
-        <td>$19.00</td>
-    </tr>
-    <tr>
-        <td>Josiah's Jumping Jambalaya</td>
-        <td>Big ol' bowl of jumping beans</td>
-        <td>$23.00</td>
-    </tr>
-    <tr>
-        <td>Blasted Bean Curds</td>
-        <td>Cheese curds, but with bean filling</td>
-        <td>$9.00</td>
-    </tr>
-    <tr>
-        <td>The Great Bean Soup</td>
-        <td>Liquified beans. Yum! Extra Fiber!</td>
-        <td>$9.00</td>
-    </tr>
-    <tr>
-        <td>Bean Mash</td>
-        <td>Liquified, but thicker</td>
-        <td>$18.00</td>
-    </tr>
-</table>
+<div id="containerMy-4" class="container my-4">
+    <div class="d-flex align-items-center justify-content-center">
+        <img id="itemImage" src="" alt="" class="img-fluid me-4" style="max-width: 200px; height: auto;">
+        <div>
+            <h3 id="itemName"></h3>
+            <p id="itemDescription"></p>
+            <p id="itemPrice" class="fw-bold"></p>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <button id="prevBtn" class="btn btn-outline-light me-2" >PREV</button>
+        <button id="nextBtn" class="btn btn-outline-light">NEXT</button>
+    </div>
+</div>
 <footer>
     <p>Contact us at <a href="mailto:josiahbarr23@gmail.com">josiahbarr23@gmail.com</a></p>
 </footer>
