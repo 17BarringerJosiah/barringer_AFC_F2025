@@ -1,6 +1,10 @@
+
+//logic to verify age, phone, and more info fields are proper inputs
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('myForm').addEventListener('submit', function (event) {
         event.preventDefault();
+
+        //logic to log all form data to the console after the user hits the submit button
         const formData = new FormData(this);
 
         const formValues = {};
@@ -39,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // More Info verification
         const moreInfoInput = document.getElementById('moreInfo');
         const moreInfoError = document.getElementById('moreInfoError');
+
         if (moreInfoInput.value.length > 30) {
             moreInfoError.textContent = 'More Info cannot exceed 30 characters.';
             isValid = false;
@@ -55,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//Array for all menu items
 const menuItems = [
     {
         name: "Bethel's Bean Bowl",
@@ -88,6 +94,7 @@ const menuItems = [
     }
 ];
 
+//logic to enable user to click on next/prev buttons to cycle through menu items
 let currentIndex = 0;
 
 function displayMenuItem(index) {
