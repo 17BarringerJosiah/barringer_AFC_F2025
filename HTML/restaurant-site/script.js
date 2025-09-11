@@ -1,14 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('myForm').addEventListener('submit', function (event) {
         event.preventDefault();
-        const formData = new FormData(this); // Create a FormData object from the form
+        const formData = new FormData(this);
 
         const formValues = {};
         for (let [key, value] of formData.entries()) {
             formValues[key] = value;
         }
 
-        // Log formValues here to see all data, regardless of validation
         console.log("Form Data:", formValues);
 
         let isValid = true;
@@ -30,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const phoneError = document.getElementById('phoneError');
         const phonePattern = /^\d{3}-\d{3}-\d{4}$/;
         if (!phonePattern.test(phoneInput.value)) {
-            phoneError.textContent = 'Please enter phone in format 123-456-7890.';
+            phoneError.textContent = 'Please enter phone number in format 123-456-7890.';
             isValid = false;
             console.log("Please enter phone in format 123-456-7890.")
         } else {
